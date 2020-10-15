@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #161616;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.middle {
+    margin-top: 38vh;
+    color: whitesmoke;
+    align-self: center;
+}
+.middle h1 {
+    font-size: 64px;
+}
+.middle p {
+    font-size: 24px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.btn-primary {
+    margin-top: 20px;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 60px;
+  }
+  
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: whitesmoke;
+    color: black;
+  }

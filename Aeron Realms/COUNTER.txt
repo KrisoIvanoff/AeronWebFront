@@ -1,0 +1,23 @@
+The new update includes a copy-ip button and a revamp of the old counter script.
+
+Which ip is copied can be changed in the index.html file.
+On line 170 you will find this bit of code:
+<input id="server-ip" type="text" value="mc.Hypixel.net"> 
+Simply change mc.Hypixel.net to your server ip and the copy button should now copy that ip to the player's clipboard.
+
+If you want to change the way the amount of players is shown, you can edit the format using a data tag. Example:
+Players on play.cubecraft.net: <span counter-ip="play.cubecraft.net" counter-format="{online}/{max}">0</span>
+
+The main tags you are able to use to customize your message with are:
+
+counter-ip="play.cubecraft.net" will retrieve the actual amount of players.
+counter-format="{online}/{max}" is the format that is used in this instance.
+If you just add the counter-ip, it will only return the number of players currently online.
+
+To show if a server is offline or online add 'counter-ip="us.mineplex.com" counter-status'. Example:
+Mineplex is currently <span counter-ip="us.mineplex.com" counter-status>...</span>
+
+The ... is whatever is shown when the script couldn't receive the status, most likely it will return offline.
+
+Example (Default):
+<h2 class="counter">Our server is <span counter-ip="mc.Hypixel.net" counter-status>...</span>, with <span style="color:lightgreen;" counter-ip="mc.Hypixel.net">0</span> other players!</h2>
